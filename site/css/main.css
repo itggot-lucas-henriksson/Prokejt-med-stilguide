@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+}
+
+.all {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    display: none;
+}
+/*Desktop*/
+.menu, .menuVisible {
+    height: 100%;
+    width: 25%;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+h1 {
+    color:#212121;
+}
+
+h2 {
+    margin: 2px;
+}
+
+p {
+font-size: 16pt;
+}
+.logo {
+    color: #d71920;
+    font-size: 40px;
+}
+
+.main {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+header {
+    width: 66.6%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+content {
+    width: 66.6%;
+}
+
+footer {
+    width: 66.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+/*Desktop*/
+
+/*iPhone 5*/
+@media only screen
+and (max-device-width : 425px)
+and (orientation : portrait) {
+
+    .menu {
+        display: none;
+    }
+
+    .menuVisible {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        z-index: 1;       
+    }
+
+    .button {
+        display: unset;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        z-index: 10;
+    }
+
+
+    .main {
+        width: 100%;
+
+    }
+
+}
+/*iPhone 5*/
