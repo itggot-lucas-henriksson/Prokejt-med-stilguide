@@ -27,18 +27,22 @@ body {
 
 h1 {
     color:#212121;
+font-family: 'Ubuntu', sans-serif;
 }
 
 h2 {
-    margin: 2px;
+    margin: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #125e8a;
 }
 
 p {
 font-size: 16pt;
+font-family: 'Maven Pro', sans-serif;
 }
 .logo {
     color: #d71920;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .main {
@@ -52,7 +56,7 @@ font-size: 16pt;
 
 header {
     width: 66.6%;
-    margin: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,6 +66,7 @@ header {
 
 content {
     width: 66.6%;
+    margin-bottom: -10px;
 }
 
 footer {
@@ -70,6 +75,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 /*Desktop*/
 
@@ -83,7 +89,7 @@ and (orientation : portrait) {
     }
 
     .menuVisible {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 80%;
@@ -93,11 +99,11 @@ and (orientation : portrait) {
 
     .button {
         display: unset;
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0;
-        width: 30px;
-        height: 30px;
+        left: 0;        
+        width: 50px;
+        height: 50px;
         background-color: transparent;
         z-index: 10;
     }
@@ -106,6 +112,11 @@ and (orientation : portrait) {
     .main {
         width: 100%;
 
+    }
+
+    header {
+        margin-bottom: 20px;
+        margin-top: 50px;
     }
 
 }
