@@ -1,13 +1,15 @@
 body {
     margin: 0px;
+    padding: 0px;
 }
 
 .all {
 
-    width: 100vw;
+    width: 97vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    margin: 0px;
 }
 
 .button {
@@ -46,10 +48,10 @@ font-family: 'Maven Pro', sans-serif;
 }
 
 .main {
-    height: 100%;
     width: 75%;
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
     background-color: white;
     align-items: center;
 }
@@ -57,6 +59,7 @@ font-family: 'Maven Pro', sans-serif;
 header {
     width: 66.6%;
     margin: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -79,7 +82,7 @@ footer {
 }
 /*Desktop*/
 
-/*iPhone 5*/
+/*Mobile*/
 @media only screen
 and (max-device-width : 425px)
 and (orientation : portrait) {
@@ -92,8 +95,8 @@ and (orientation : portrait) {
         position: fixed;
         top: 0;
         left: 0;
-        width: 80%;
-        height: 100%;
+        width: 80vw;
+        height: 100vh;
         z-index: 1;       
     }
 
@@ -117,6 +120,10 @@ and (orientation : portrait) {
     header {
         margin-bottom: 20px;
         margin-top: 50px;
+    }
+
+    .product {
+        width: 100%;
     }
 
 }
