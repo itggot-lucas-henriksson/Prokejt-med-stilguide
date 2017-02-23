@@ -38,17 +38,34 @@ h2 {
     color: #125e8a;
 }
 
+h2:hover {
+color: #760e12;
+}
+
+.inactive:hover {
+color: #125e8a;
+}
+
 p {
 font-size: 16pt;
 font-family: 'Maven Pro', sans-serif;
+text-align: left;
 }
 .logo {
     color: #d71920;
     font-size: 60px;
 }
 
+.product_75 {
+    display: unset;
+}
+
+.product_50 {
+    display: none;
+}
+
 .main {
-    width: 75%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -56,9 +73,17 @@ font-family: 'Maven Pro', sans-serif;
     align-items: center;
 }
 
+aside {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
-    width: 66.6%;
-    margin: 10px;
+    width: 90%;
+    margin: 30px;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
@@ -68,24 +93,23 @@ header {
 }
 
 content {
-    width: 66.6%;
+    width: 90%;
     margin-bottom: -10px;
 }
 
 footer {
-    width: 66.6%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 5px;
 }
-/*Desktop*/
+/*/Desktop*/
 
 /*Mobile*/
 @media only screen
-and (max-device-width : 425px)
-and (orientation : portrait) {
+and (max-device-width : 768px) {
 
     .menu {
         display: none;
@@ -111,7 +135,10 @@ and (orientation : portrait) {
         z-index: 10;
     }
 
-
+    aside {
+    display: none;
+    }
+    
     .main {
         width: 100%;
 
@@ -122,9 +149,30 @@ and (orientation : portrait) {
         margin-top: 50px;
     }
 
-    .product {
-        width: 100%;
+    footer {
+        margin-bottom: 30px;
+    }
+
+        .product_50 {
+        display: unset;
+    }
+
+        .product_75 {
+        display: none;
+    }
+}
+/*iPhone 5*/
+
+@media only screen
+and (min-device-width : 425px)
+and (max-device-width: 768px) {
+
+    .menuVisible {
+        width: 25%;
+    }
+
+    content {
+        text-align: center;
     }
 
 }
-/*iPhone 5*/
